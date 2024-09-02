@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Skippy McBoatface">
+<meta name="author" content="Ryan Ta">
 
 <title>Homework 1 - Open Source Tools</title>
 <style>
@@ -3066,15 +3066,9 @@ vertical-align: -.125em;
   </ul></li>
   <li><a href="#digging-into-the-details" id="toc-digging-into-the-details" class="nav-link" data-scroll-target="#digging-into-the-details">Digging into the details</a>
   <ul class="collapse">
-  <li><a href="#relational-oltp-dbms" id="toc-relational-oltp-dbms" class="nav-link" data-scroll-target="#relational-oltp-dbms">Relational OLTP DBMS</a>
-  <ul class="collapse">
-  <li><a href="#unique-characteristics-of-relational-oltp-dbms" id="toc-unique-characteristics-of-relational-oltp-dbms" class="nav-link" data-scroll-target="#unique-characteristics-of-relational-oltp-dbms">Unique Characteristics of Relational OLTP DBMS:</a></li>
-  <li><a href="#usage-of-relational-oltp-dbms" id="toc-usage-of-relational-oltp-dbms" class="nav-link" data-scroll-target="#usage-of-relational-oltp-dbms">Usage of Relational OLTP DBMS:</a></li>
-  <li><a href="#examples-of-open-source-relational-oltp-dbms" id="toc-examples-of-open-source-relational-oltp-dbms" class="nav-link" data-scroll-target="#examples-of-open-source-relational-oltp-dbms">Examples of Open-Source Relational OLTP DBMS:</a></li>
-  </ul></li>
-  <li><a href="#your-interest-category-1" id="toc-your-interest-category-1" class="nav-link" data-scroll-target="#your-interest-category-1">(Your interest category 1)</a></li>
-  <li><a href="#your-interest-category-2" id="toc-your-interest-category-2" class="nav-link" data-scroll-target="#your-interest-category-2">(Your interest category 2)</a></li>
-  <li><a href="#your-interest-category-3" id="toc-your-interest-category-3" class="nav-link" data-scroll-target="#your-interest-category-3">(Your interest category 3)</a></li>
+  <li><a href="#graph-database" id="toc-graph-database" class="nav-link" data-scroll-target="#graph-database">Graph Database</a></li>
+  <li><a href="#search-engine" id="toc-search-engine" class="nav-link" data-scroll-target="#search-engine">Search Engine</a></li>
+  <li><a href="#security" id="toc-security" class="nav-link" data-scroll-target="#security">Security</a></li>
   </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
@@ -3094,7 +3088,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Skippy McBoatface <a href="mailto:skippy@mcboatface.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>Ryan Ta <a href="mailto:tard@vcu.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
           </div>
   </div>
     
@@ -3107,7 +3101,7 @@ vertical-align: -.125em;
 </header>
 
 
-<p>(Add an intro paragraph here. What is the purpose of this report?)</p>
+<p>This report will be used for my future self. It will include information regarding the assignment. Some information that will be included are overviews of each of the 9 larger categories, detailed descriptions of the smaller categories that interest me, and a reflection examining the assignment in general.</p>
 <section id="open-source-data-engineering-tools" class="level1">
 <h1>Open Source Data Engineering Tools</h1>
 <p>Author Alireza Sadeghi offers a nice overview of the <a href="https://practicaldataengineering.substack.com/p/open-source-data-engineering-landscape">2024 ata engineering landscape</a> in the on-line web site <a href="https://practicaldataengineering.substack.com/">Practical Data Engineering Substack</a>.</p>
@@ -3126,115 +3120,57 @@ vertical-align: -.125em;
 </section>
 <section id="data-integration" class="level2">
 <h2 class="anchored" data-anchor-id="data-integration">Data Integration</h2>
-<p>(add description here)</p>
+<p>Data integration is combining data from different sources into a single database. Some examples of tools used for data integration are Apache Nifi, Airbyte, Meltano, Apache Inlong, Apache SeaTunnel, Cloud Query, and Streampipe. These tools are simplifying data integration from APis and provide convneient solutions to ingest data from diverse sources.</p>
 </section>
 <section id="data-processing-and-computation" class="level2">
 <h2 class="anchored" data-anchor-id="data-processing-and-computation">Data Processing and Computation</h2>
-<p>(add description here)</p>
+<p>Data processing and computation is a number of operations used on data to transform, analyze, and organize it into something more useful. Some tools used for this are Apache Spark and Apache Flink. For Python, Vaex, Dask, polars, and Ray are data processing libraries used for multi-core processors which allows futher possibilites to analyze massive datasets. Using these tools allows data to be better formatted for its use.</p>
 </section>
 <section id="workflow-and-dataops" class="level2">
 <h2 class="anchored" data-anchor-id="workflow-and-dataops">Workflow and DataOps</h2>
-<p>(add description here)</p>
+<p>Workflow is a sereis of steps that are performed on data to achieve a specific goal. DataOps are focused on managing and processing data. Some tools are Apache Airflow, Dagster, Kaestra, Temporal, Mage, and Windmill. These tools all have great variety and can cater to whatever is prioritized when executing the steps of the task.</p>
 </section>
 <section id="data-infrastructure-and-monitoring" class="level2">
 <h2 class="anchored" data-anchor-id="data-infrastructure-and-monitoring">Data Infrastructure and Monitoring</h2>
-<p>(add description here)</p>
+<p>Data infrastructure is built to manage, observe, store, and process data. Some tools for this are Grafana, Promethesu, and ELK. These tools are a great help for monitoring data that may be too large to observe normally.</p>
 </section>
 <section id="mlai-platform" class="level2">
 <h2 class="anchored" data-anchor-id="mlai-platform">ML/AI Platform</h2>
-<p>(add description here)</p>
+<p>ML/AI platforms provide users with tools to develop, deploy, and improve ML or AI. There are tools available to scale these platforms efficiently and smoothy. These tools are important because it is very helpful in developing ML/AI platforms.</p>
 </section>
 <section id="metadata-management" class="level2">
 <h2 class="anchored" data-anchor-id="metadata-management">Metadata Management</h2>
-<p>(add description here)</p>
+<p>Metadata management is managing metadata about data and giving it meaning. Some tools are Amundsen, DataHub, and Marquez. These tools are essential for improving hte management and acess to data.</p>
 </section>
 <section id="analytics-and-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="analytics-and-visualization">Analytics and Visualization</h2>
-<p>(add description here)</p>
+<p>Analytics and visualization effectively create understandable visuals based on the meaningful data. A tool used for visualization is Apache Superset. They provide great digestible ways to understand the data that can be shared with anyone to comprehend.</p>
 </section>
 </section>
 <section id="digging-into-the-details" class="level1">
 <h1>Digging into the details</h1>
 <p>In the following sections I identify three subcategories of data engineering tools of greatest interest to me.</p>
-<section id="relational-oltp-dbms" class="level2">
-<h2 class="anchored" data-anchor-id="relational-oltp-dbms">Relational OLTP DBMS</h2>
-<p>This section is provided as an example. You MAY NOT submit <em>relational OLTP DBMS</em> as part of your project 1!</p>
-<p><strong>Relational Online Transaction Processing (OLTP) Database Management Systems (DBMS)</strong> are designed to manage and execute a large number of short, transactional operations that involve the insertion, update, and deletion of data in a relational database. These systems are optimized for environments where data integrity, consistency, and speed are critical due to the high volume of concurrent transactions.</p>
-<section id="unique-characteristics-of-relational-oltp-dbms" class="level3">
-<h3 class="anchored" data-anchor-id="unique-characteristics-of-relational-oltp-dbms">Unique Characteristics of Relational OLTP DBMS:</h3>
-<ol type="1">
-<li><strong>Structured Data Storage:</strong>
-<ul>
-<li>Data is stored in a structured format using tables that define specific schemas, with rows representing records and columns representing attributes of the data.</li>
-<li>The use of primary and foreign keys enforces relationships between different tables, maintaining data integrity across the database.</li>
-</ul></li>
-<li><strong>ACID Compliance:</strong>
-<ul>
-<li>OLTP systems are designed to be ACID-compliant (Atomicity, Consistency, Isolation, Durability). This ensures that all transactions are processed reliably, even in the event of a system failure.</li>
-<li>Atomicity guarantees that all parts of a transaction are completed; otherwise, the transaction is aborted.</li>
-<li>Consistency ensures that each transaction brings the database from one valid state to another.</li>
-<li>Isolation keeps transactions separated until they are completed, preventing concurrency issues.</li>
-<li>Durability ensures that once a transaction is committed, it is permanently recorded in the database, even in the case of a power failure.</li>
-</ul></li>
-<li><strong>Concurrency Control:</strong>
-<ul>
-<li>OLTP systems employ sophisticated concurrency control mechanisms, such as locking and transaction isolation levels, to manage simultaneous data access by multiple users or processes.</li>
-<li>These mechanisms prevent conflicts and ensure that transactions are executed in a consistent and reliable manner, even under heavy load.</li>
-</ul></li>
-<li><strong>High Availability and Reliability:</strong>
-<ul>
-<li>OLTP databases are designed for environments that require high availability and reliability. They often include features such as replication, clustering, and failover to ensure continuous operation even during hardware or network failures.</li>
-<li>Backup and recovery mechanisms are also integral to these systems, ensuring that data can be restored to a consistent state in the event of a failure.</li>
-</ul></li>
-<li><strong>Scalability:</strong>
-<ul>
-<li>While traditionally OLTP systems were scaled vertically by adding more resources to a single server, modern OLTP DBMS solutions support horizontal scaling, enabling distributed transactions across multiple servers or nodes.</li>
-<li>Distributed OLTP systems can handle a larger number of transactions by partitioning data and processing load across multiple instances.</li>
-</ul></li>
-</ol>
+<section id="graph-database" class="level2">
+<h2 class="anchored" data-anchor-id="graph-database">Graph Database</h2>
+<p>Graph Database stores data with nodes, edges, and properties. All of these aspects represent data and are used to show the relationshipo between them that normal databases are unable to do. Graph databases are important because it provides a way to find solutions by analyzing the strength and quality of relationship between data which can not be done with normal databases. This differs from Relational OLTP databses because graph databases do not involve oeprations on the data, do not optimize the data, and involve a visual aspect to it. This category iterested me because I wanted to see what aproach would be used to put data into a graph form.</p>
 </section>
-<section id="usage-of-relational-oltp-dbms" class="level3">
-<h3 class="anchored" data-anchor-id="usage-of-relational-oltp-dbms">Usage of Relational OLTP DBMS:</h3>
-<ol type="1">
-<li><p><strong>Business Applications:</strong></p>
-<p>OLTP systems are widely used in business applications that require the processing of large volumes of simple, repetitive transactions, such as order processing, inventory management, financial transactions, and customer relationship management (CRM) systems.</p>
-<p>Examples include e-commerce platforms, banking systems, and ERP (Enterprise Resource Planning) software.</p></li>
-<li><p><strong>Real-Time Transaction Processing:</strong></p>
-<p>OLTP systems are ideal for applications requiring real-time data entry, updates, and querying, where the accuracy and speed of transactions directly impact business operations.</p>
-<p>They are often used in industries such as finance, telecommunications, retail, and healthcare, where real-time data processing is critical.</p></li>
-<li><p><strong>Data Integrity and Consistency:</strong></p>
-<p>OLTP databases are crucial in environments where data integrity and consistency are non-negotiable. For example, in financial systems, it is vital that all transactions are recorded accurately and that balances reflect all processed transactions immediately.</p></li>
-<li><p><strong>User-Driven Querying:</strong></p>
-<p>OLTP systems support user-driven querying, allowing end-users to retrieve and interact with data through applications in real-time. These queries are typically simple and involve accessing specific records or performing updates on existing data.</p></li>
-</ol>
+<section id="search-engine" class="level2">
+<h2 class="anchored" data-anchor-id="search-engine">Search Engine</h2>
+<p>Search Engine database is used to search through data content. It categorizes data with similar characteristics together which allows the data to be searched through based on their traits. This tool is important becuase browsers are an essential part of the internet and they use search engines as the back bone. So without search engines there would be searchibility online. Also, it provies a very efficient way to go through data compared to manually searching which is impossible the larger the database is. This differs from Relational OLTP databases because search engines categorize data based on traits, do not involve operations on the data, and is not used to optimize the data. Search engines are of interest to me because the whole internet is built around search engines so I was entrigued on how they functioned.</p>
 </section>
-<section id="examples-of-open-source-relational-oltp-dbms" class="level3">
-<h3 class="anchored" data-anchor-id="examples-of-open-source-relational-oltp-dbms">Examples of Open-Source Relational OLTP DBMS:</h3>
-<p><strong>PostgreSQL:</strong> A powerful, open-source relational database system that is known for its robustness, extensibility, and support for complex queries and transactions.</p>
-<p><strong>MySQL:</strong> A widely-used open-source relational database known for its ease of use, reliability, and performance, particularly in web-based applications.</p>
-<p><strong>MariaDB:</strong> A fork of MySQL, MariaDB is designed to be highly compatible with MySQL while offering additional features and performance improvements.</p>
-<p><strong>SQLite:</strong> A lightweight, embedded SQL database engine that is self-contained and requires minimal setup, commonly used in mobile apps and small to medium-sized applications.</p>
-<p>These relational OLTP DBMS tools are foundational in many organizations, ensuring that transactional data is handled efficiently and reliably, forming the backbone of countless business operations worldwide.</p>
-</section>
-</section>
-<section id="your-interest-category-1" class="level2">
-<h2 class="anchored" data-anchor-id="your-interest-category-1">(Your interest category 1)</h2>
-</section>
-<section id="your-interest-category-2" class="level2">
-<h2 class="anchored" data-anchor-id="your-interest-category-2">(Your interest category 2)</h2>
-</section>
-<section id="your-interest-category-3" class="level2">
-<h2 class="anchored" data-anchor-id="your-interest-category-3">(Your interest category 3)</h2>
+<section id="security" class="level2">
+<h2 class="anchored" data-anchor-id="security">Security</h2>
+<p>Security is used to protect a database from unauthorized access, manipulation, or desctruction. It is also used to prevent sensitive data from being exposed and ensures the integrity of all data stored in the database system. This is very important because without any security all databases would be exposed to outside alterations and access which would compromise the usefulness of the database. Also, without security all personal data is put at risk for everyone to acess which would obviously not be good. This differs from Relatoinal OLTP databases becaues security alters the data more to the point of protection and is not meant to optimize large amounts of transactions. This category interested me because every database on the internet involves some security so I wanted to see how one of the most important parts of databses worked.</p>
 </section>
 </section>
 <section id="reflection" class="level1">
 <h1>Reflection</h1>
 <p>Convert these questions into brief paragraph responses (two or three sentence).</p>
 <ul>
-<li><p>what did you like about this project?</p></li>
-<li><p>what did you find hardest about this project?</p></li>
-<li><p>what did you find most surprising about this assignment?</p></li>
-<li><p>how would you approach this project differently next time?</p></li>
+<li><p>what did you like about this project? I liked the practice using quarto to render things because I like being prepared before I use something. Also, I enjoy learning about things hands on. It was also enjoyable to learn about the different categories of databases and learning how many there are.</p></li>
+<li><p>what did you find hardest about this project? The hardest part was setting up quarto to render because I was not able to follow the commands in the isntructions I had to slightly alter it to render. Also, researching details on the categories of databases because not everything was in the link provided so I had to explore different sources.</p></li>
+<li><p>what did you find most surprising about this assignment? I found it suprising that rendering was actually quite simple when everything is set up. Also, I was very suprised how many things are reliant on databases.</p></li>
+<li><p>how would you approach this project differently next time? Next time I would watch some more videos on setting up VSCode and quarto to get a better understanding. Other than that, I think everything else in this project went well.</p></li>
 </ul>
 </section>
 

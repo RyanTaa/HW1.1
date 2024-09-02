@@ -1,0 +1,164 @@
+---
+title: Homework 1 - Open Source Tools
+author:
+    - name: Ryan Ta
+      email: tard@vcu.edu
+format:
+    html:
+        embed-resources: true
+        html-math-method: katex
+        theme: spacelab
+        toc: true
+
+## Useful references:
+
+# - Basic Markdown: https://quarto.org/docs/authoring/markdown-basics.html
+# - Quarto figures: https://quarto.org/docs/authoring/figures.html
+# - HTML document basics: https://quarto.org/docs/output-formats/html-basics.html
+# - Quarto guide: https://quarto.org/docs/guide/
+# - VS Code and Quarto: https://quarto.org/docs/tools/vscode.html
+#   (RTFM and GET THE EXTENSION!!!!)
+
+---
+
+This report will be used for my future self. It will include information regarding the assignment. Some information that will be included are overviews of each of the 9 larger categories, detailed descriptions of the smaller categories that interest me, and a reflection examining the assignment in general.
+
+# Open Source Data Engineering Tools
+
+Author Alireza Sadeghi offers a nice overview of the [2024 ata engineering landscape](https://practicaldataengineering.substack.com/p/open-source-data-engineering-landscape) in the on-line web site [Practical Data Engineering Substack](https://practicaldataengineering.substack.com/).
+
+![](assets/tools-2024.webp)
+
+# Major Categories
+
+Mr. Sadeghi proposals nine major tools categories.
+
+## Storage Systems
+
+Storage systems are foundational components in data engineering that handle the storage and retrieval of data. These systems can include traditional databases, distributed storage solutions, and modern cloud-based storage options. They provide scalable, reliable, and secure environments to store structured, semi-structured, and unstructured data, ensuring data is accessible for processing, analysis, and other operations.
+
+## Data Lake Platform
+
+Data Lake platforms are designed to store vast amounts of raw data in its native format until it is needed. Unlike traditional databases, data lakes can store structured, semi-structured, and unstructured data, providing a flexible and scalable storage solution. These platforms support the integration of multiple data sources, making it easier to perform big data analytics and machine learning on large datasets.
+
+## Data Integration
+
+Data integration is combining data from different sources into a single database. Some examples of tools used for data integration are Apache Nifi, Airbyte, Meltano, Apache Inlong, Apache SeaTunnel, Cloud Query, and Streampipe. These tools are simplifying data integration from APis and provide convneient solutions to ingest data from diverse sources.
+
+## Data Processing and Computation
+
+Data processing and computation is a number of operations used on data to transform, analyze, and organize it into something more useful. Some tools used for this are Apache Spark and Apache Flink. For Python, Vaex, Dask, polars, and Ray are data processing libraries used for multi-core processors which allows futher possibilites to analyze massive datasets. Using these tools allows data to be better formatted for its use.
+
+## Workflow and DataOps
+
+Workflow is a sereis of steps that are performed on data to achieve a specific goal. DataOps are focused on managing and processing data. Some tools are Apache Airflow, Dagster, Kaestra, Temporal, Mage, and Windmill. These tools all have great variety and can cater to whatever is prioritized when executing the steps of the task.
+
+## Data Infrastructure and Monitoring
+
+Data infrastructure is built to manage, observe, store, and process data. Some tools for this are Grafana, Promethesu, and ELK. These tools are a great help for monitoring data that may be too large to observe normally.  
+
+## ML/AI Platform
+
+ML/AI platforms provide users with tools to develop, deploy, and improve ML or AI. There are tools available to scale these platforms efficiently and smoothy. These tools are important because it is very helpful in developing ML/AI platforms.
+
+## Metadata Management
+
+Metadata management is managing metadata about data and giving it meaning. Some tools are Amundsen, DataHub, and Marquez. These tools are essential for improving hte management and acess to data.
+
+## Analytics and Visualization
+
+Analytics and visualization effectively create understandable visuals based on the meaningful data. A tool used for visualization is Apache Superset. They provide great digestible ways to understand the data that can be shared with anyone to comprehend.
+
+# Digging into the details
+
+In the following sections I identify three subcategories of data engineering tools of greatest interest to me.
+
+## Relational OLTP DBMS
+
+This section is provided as an example.  You MAY NOT submit *relational OLTP DBMS* as part of your project 1!
+
+**Relational Online Transaction Processing (OLTP) Database Management Systems (DBMS)** are designed to manage and execute a large number of short, transactional operations that involve the insertion, update, and deletion of data in a relational database. These systems are optimized for environments where data integrity, consistency, and speed are critical due to the high volume of concurrent transactions.
+
+### Unique Characteristics of Relational OLTP DBMS:
+
+1. **Structured Data Storage:**
+   - Data is stored in a structured format using tables that define specific schemas, with rows representing records and columns representing attributes of the data.
+   - The use of primary and foreign keys enforces relationships between different tables, maintaining data integrity across the database.
+
+2. **ACID Compliance:**
+   - OLTP systems are designed to be ACID-compliant (Atomicity, Consistency, Isolation, Durability). This ensures that all transactions are processed reliably, even in the event of a system failure.
+   - Atomicity guarantees that all parts of a transaction are completed; otherwise, the transaction is aborted.
+   - Consistency ensures that each transaction brings the database from one valid state to another.
+   - Isolation keeps transactions separated until they are completed, preventing concurrency issues.
+   - Durability ensures that once a transaction is committed, it is permanently recorded in the database, even in the case of a power failure.
+
+3. **Concurrency Control:**
+   - OLTP systems employ sophisticated concurrency control mechanisms, such as locking and transaction isolation levels, to manage simultaneous data access by multiple users or processes.
+   - These mechanisms prevent conflicts and ensure that transactions are executed in a consistent and reliable manner, even under heavy load.
+
+4. **High Availability and Reliability:**
+   - OLTP databases are designed for environments that require high availability and reliability. They often include features such as replication, clustering, and failover to ensure continuous operation even during hardware or network failures.
+   - Backup and recovery mechanisms are also integral to these systems, ensuring that data can be restored to a consistent state in the event of a failure.
+
+5. **Scalability:**
+   - While traditionally OLTP systems were scaled vertically by adding more resources to a single server, modern OLTP DBMS solutions support horizontal scaling, enabling distributed transactions across multiple servers or nodes.
+   - Distributed OLTP systems can handle a larger number of transactions by partitioning data and processing load across multiple instances.
+
+### Usage of Relational OLTP DBMS:
+
+1. **Business Applications:**
+   
+   OLTP systems are widely used in business applications that require the processing of large volumes of simple, repetitive transactions, such as order processing, inventory management, financial transactions, and customer relationship management (CRM) systems.
+   
+   Examples include e-commerce platforms, banking systems, and ERP (Enterprise Resource Planning) software.
+
+2. **Real-Time Transaction Processing:**
+
+   OLTP systems are ideal for applications requiring real-time data entry, updates, and querying, where the accuracy and speed of transactions directly impact business operations.
+
+   They are often used in industries such as finance, telecommunications, retail, and healthcare, where real-time data processing is critical.
+
+3. **Data Integrity and Consistency:**
+   
+   OLTP databases are crucial in environments where data integrity and consistency are non-negotiable. For example, in financial systems, it is vital that all transactions are recorded accurately and that balances reflect all processed transactions immediately.
+
+4. **User-Driven Querying:**
+   
+   OLTP systems support user-driven querying, allowing end-users to retrieve and interact with data through applications in real-time. These queries are typically simple and involve accessing specific records or performing updates on existing data.
+
+### Examples of Open-Source Relational OLTP DBMS:
+
+**PostgreSQL:** A powerful, open-source relational database system that is known for its robustness, extensibility, and support for complex queries and transactions.
+
+**MySQL:** A widely-used open-source relational database known for its ease of use, reliability, and performance, particularly in web-based applications.
+
+**MariaDB:** A fork of MySQL, MariaDB is designed to be highly compatible with MySQL while offering additional features and performance improvements.
+
+**SQLite:** A lightweight, embedded SQL database engine that is self-contained and requires minimal setup, commonly used in mobile apps and small to medium-sized applications.
+
+These relational OLTP DBMS tools are foundational in many organizations, ensuring that transactional data is handled efficiently and reliably, forming the backbone of countless business operations worldwide.
+
+## Graph Database
+Graph Database stores data with nodes, edges, and properties. All of these aspects represent data and are used to show the relationshipo between them that normal databases are unable to do. Graph databases are important because it provides a way to find solutions by analyzing the strength and quality of relationship between data which can not be done with normal databases. This differs from Relational OLTP databses because graph databases do not involve oeprations on the data, do not optimize the data, and involve a visual aspect to it. This category iterested me because I wanted to see what aproach would be used to put data into a graph form.
+
+## Search Engine
+Search Engine database is used to search through data content. It categorizes data with similar characteristics together which allows the data to be searched through based on their traits. This tool is important becuase browsers are an essential part of the internet and they use search engines as the back bone. So without search engines there would be searchibility online. Also, it provies a very efficient way to go through data compared to manually searching which is impossible the larger the database is. This differs from Relational OLTP databases because search engines categorize data based on traits, do not involve operations on the data, and is not used to optimize the data. Search engines are of interest to me because the whole internet is built around search engines so I was entrigued on how they functioned.
+
+## Security
+Security is used to protect a database from unauthorized access, manipulation, or desctruction. It is also used to prevent sensitive data from being exposed and ensures the integrity of all data stored in the database system. This is very important because without any security all databases would be exposed to outside alterations and access which would compromise the usefulness of the database. Also, without security all personal data is put at risk for everyone to acess which would obviously not be good. This differs from Relatoinal OLTP databases becaues security alters the data more to the point of protection and is not meant to optimize large amounts of transactions. This category interested me because every database on the internet involves some security so I wanted to see how one of the most important parts of databses worked. 
+
+# Reflection
+
+Convert these questions into brief paragraph responses (two or three sentence).
+
+* what did you like about this project?
+I liked the practice using quarto to render things because I like being prepared before I use something. Also, I enjoy learning about things hands on. It was also enjoyable to learn about the different categories of databases and learning how many there are.
+
+* what did you find hardest about this project?
+The hardest part was setting up quarto to render because I was not able to follow the commands in the isntructions I had to slightly alter it to render. Also, researching details on the categories of databases because not everything was in the link provided so I had to explore different sources.
+
+* what did you find most surprising about this assignment?
+I found it suprising that rendering was actually quite simple when everything is set up. Also, I was very suprised how many things are reliant on databases.
+
+* how would you approach this project differently next time?
+Next time I would watch some more videos on setting up VSCode and quarto to get a better understanding. Other than that, I think everything else in this project went well.
